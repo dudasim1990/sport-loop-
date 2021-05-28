@@ -1,0 +1,66 @@
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/roboto-v27-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/roboto-v27-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    src: local(''),
+         url('../fonts/roboto-v27-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/roboto-v27-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom, #cfdde8, #748fa5);
+    background-repeat: no-repeat;
+    font-family:'Roboto', sans-serif;
+}
+
+.chat-wrapper{
+    width: 400px;
+    margin: 100px auto 0;
+    background-color: #fff;
+    
+}
+
+.chat-title{
+    padding: 20px;
+    padding-left: 40px;
+    background-color: #608BD3;
+    color: #fff;
+}
+
+.chat-title-text{
+    font-weight: 600;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+.chat-title-text::before{
+    content: '';
+    background-color: #fff;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    right: ;
+}
+
+
+
+

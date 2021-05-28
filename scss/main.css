@@ -1,0 +1,222 @@
+.chat-wrapper .message_time {
+  color: #aaa;
+  font-size: x-small;
+  margin-bottom: 5px;
+}
+
+.chat-wrapper .message_text {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.chat-wrapper .departure-point .departure-point_send {
+  color: #465879;
+  font-weight: 700;
+  font-size: 16px;
+  border: none;
+  display: inline-block;
+  background-color: #fff;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("../fonts/roboto-v27-latin-regular.woff2") format("woff2"), url("../fonts/roboto-v27-latin-regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: local(""), url("../fonts/roboto-v27-latin-500.woff2") format("woff2"), url("../fonts/roboto-v27-latin-500.woff") format("woff");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#cfdde8), to(#748fa5));
+  background-image: linear-gradient(to bottom, #cfdde8, #748fa5);
+  background-repeat: no-repeat;
+  font-family: 'Roboto', sans-serif;
+}
+
+.chat-wrapper {
+  width: 400px;
+  margin: 100px auto 0;
+  background-color: #fff;
+}
+
+.chat-wrapper .chat-title {
+  padding: 20px;
+  padding-left: 50px;
+  background-color: #608BD3;
+  color: #fff;
+  position: relative;
+}
+
+.chat-wrapper .chat-title .chat-title-text {
+  font-weight: 500;
+  letter-spacing: 1px;
+  position: relative;
+  font-size: 22px;
+}
+
+.chat-wrapper .chat-title .chat-title-text::before {
+  content: '';
+  background-color: #fff;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  position: absolute;
+  left: -30px;
+  top: 30%;
+}
+
+.chat-wrapper .chat-title .fas {
+  text-decoration: none;
+  color: #fff;
+  position: absolute;
+  right: 20px;
+  top: 25px;
+  opacity: 0.8;
+}
+
+.chat-wrapper .chat-title .fas:hover {
+  opacity: 1;
+}
+
+.chat-wrapper .chating-wrapp {
+  padding: 20px;
+}
+
+.chat-wrapper .date {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 30px;
+}
+
+.chat-wrapper .date .date_text {
+  font-size: 16px;
+  color: #c0c0c0;
+  text-transform: uppercase;
+  background-color: #fff;
+  position: absolute;
+  padding: 0 10px;
+}
+
+.chat-wrapper .date::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #c0c0c0;
+  position: absolute;
+  top: calc(50% - 10px);
+}
+
+.chat-wrapper .message {
+  margin-bottom: 18px;
+}
+
+.chat-wrapper .message_text {
+  display: inline-block;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.chat-wrapper .sent .message_text {
+  background-color: #E3EBF5;
+  position: relative;
+}
+
+.chat-wrapper .sent .message_text::before {
+  content: '';
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #E3EBF5;
+  position: absolute;
+  top: 0;
+  left: -10px;
+}
+
+.chat-wrapper .incoming {
+  position: relative;
+  float: right;
+}
+
+.chat-wrapper .incoming::after {
+  content: '';
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #F0F0F0;
+  position: absolute;
+  right: -10px;
+}
+
+.chat-wrapper .incoming .message_time {
+  text-align: right;
+}
+
+.chat-wrapper .incoming .message_text {
+  background-color: #F0F0F0;
+}
+
+.chat-wrapper .warning {
+  float: right;
+}
+
+.chat-wrapper .warning .message_text {
+  background-color: #E7A9A8;
+}
+
+.chat-wrapper .bottom-line {
+  width: 100%;
+  height: 1.5px;
+  border: none;
+  background-color: #c0c0c0;
+  margin-bottom: 16px;
+}
+
+.chat-wrapper .departure-point .departure-point_input {
+  width: 300px;
+  height: 20px;
+  font-size: 18px;
+  outline: none;
+  border: none;
+}
+
+.close-body {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#cfdde8), to(#748fa5));
+  background-image: linear-gradient(to bottom, #cfdde8, #748fa5);
+  background-repeat: no-repeat;
+}
+
+.close-body .chat {
+  text-align: center;
+}
+
+.close-body .chat a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  display: inline-block;
+  padding: 10px;
+  border: 1px solid blue;
+}
+/*# sourceMappingURL=main.css.map */
